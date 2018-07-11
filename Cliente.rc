@@ -1,0 +1,175 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOGO_CONECTAR DIALOGEX 0, 0, 131, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cliente Chat: Conectar"
+FONT 8, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Informacion",IDC_STATIC,7,2,119,90
+    LTEXT           "IP",IDC_STATIC,12,17,8,8
+    LTEXT           "Puerto",IDC_STATIC,12,35,22,8
+    LTEXT           "Nick",IDC_STATIC,12,53,14,8
+    DEFPUSHBUTTON   "Conectar",BCONECTAR,40,75,50,14
+    EDITTEXT        CIP,52,16,69,14,ES_AUTOHSCROLL
+    EDITTEXT        CPUERTO,52,33,69,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CNICK,52,50,69,14,ES_AUTOHSCROLL
+END
+
+DIALOGO_CHAT DIALOGEX 0, 0, 453, 285
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat"
+MENU IDR_MENU1
+FONT 8, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Chat",IDC_STATIC,5,6,324,275
+    GROUPBOX        "Usuarios conectados",IDC_STATIC,337,6,111,200
+    LISTBOX         LUSUARIOS,341,17,102,183,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    GROUPBOX        "Cambiar Nick",IDC_STATIC,337,215,111,61
+    EDITTEXT        CMENSAJE,13,263,246,14,ES_AUTOHSCROLL
+    EDITTEXT        CCNICK,351,230,91,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Cambiar",BCNICK,367,252,56,14
+    EDITTEXT        CCHAT,13,17,309,242,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "Enviar",BENVIAR,264,263,59,14
+    LTEXT           "Armando Andini, 30/10/09",IDC_STATIC,371,277,81,8
+END
+
+ACERCA_DE DIALOGEX 0, 0, 186, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de.."
+FONT 8, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,126,73,50,14
+    LTEXT           "Cliente de chat 1.0\n       por Armando Andini",IDC_STATIC,8,20,169,43
+    GROUPBOX        "Cliente Chat 1.0",IDC_STATIC,3,3,176,86
+    LTEXT           "Version en C++ del 30/03/2010",IDC_STATIC,7,77,102,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DIALOGO_CONECTAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    DIALOGO_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+
+    ACERCA_DE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Archivo"
+    BEGIN
+        MENUITEM "Salir",                       MSALIR
+    END
+    POPUP "Ayuda"
+    BEGIN
+        MENUITEM "Acerca de...",                MACERCADE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Ruff.ico"
+#endif    // Español (España) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
